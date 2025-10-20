@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <b><h1>Todo App</h1></b>
+        <div class="loga_plus">
+            <input type="text" id="todo-input" class="plus_pn" placeholder="Add your new todo">
+            <button id="add-btn"><i>+</i></button>
+
+            <b><input type="text" class="plus_no" placeholder="Buy a new gaming laptop"></b>
+            <input type="text" class="plus_delet" placeholder="Complete a previous task">
+           
+            <input type="text" class="yutube" placeholder="Create video for YouTube">
+            <input type="text" class="com" placeholder="Create a new portfolio site">
+            <div class="yourtel">            <h2>You have 4 pending task</h2> <button id="clear-btn">  cls</button>
+</div>
+        </div>
+
+        <div id="todo-list"></div>
+    </div>
+
+    <script>
+        const input = document.getElementById('todo-input');
+        const addBtn = document.getElementById('add-btn');
+        const clearBtn = document.getElementById('clear-btn');
+        const todoList = document.getElementById('todo-list');
+
+        addBtn.addEventListener('click', () => {
+          const text = input.value.trim();
+          if (text !== '') {
+            const item = document.createElement('div');
+            item.className = 'todo-item';
+            item.textContent = text;
+            todoList.appendChild(item);
+            input.value = '';
+          }
+        });
+
+        clearBtn.addEventListener('click', () => {
+          todoList.innerHTML = '';
+        });
+
+        formList.addEventListener("click", (e) => {
+          if (e.target.id === "form_item_delete_btn") {
+            e.target.closest(".form_item").remove();
+          }
+        });
+    </script>
+</body>
+</html>

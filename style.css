@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient(135deg, #6EE7B7, #3B82F6);
+  
+}
+.header{
+    width: 400px;
+    height: 530px;
+    border-radius: 5px;
+    margin-left: 500px;
+    background-color: white;
+    padding: 0  0 0 30px;
+    box-shadow: 2 2 2 black;
+    
+}
+.header h1{
+    margin: 20px 0  10px 0;
+}
+.loga_plus{
+
+}
+.plus_pn{
+    width: 300px;
+    height: 38px;
+}
+#add-btn {
+  background: #8b5cf6;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.plus_no{
+    width: 344px;
+    height: 39px;
+    background-color: rgb(243, 239, 239);
+    margin-top: 20px;
+    border: none;
+}
+.plus_delet{
+     width: 300px;
+    height: 38px;
+    margin-top: 20px;
+    background-color: rgb(243, 239, 239);
+    border: none;
+}
+#add-btin {
+  background: #ff0303;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.yutube{
+     width: 344px;
+    height: 39px;
+    background-color: rgb(243, 239, 239);
+    margin-top: 20px;
+    border: none;
+}
+.com{
+     width: 344px;
+    height: 39px;
+    background-color: rgb(243, 239, 239);
+    margin-top: 20px;
+    border: none;
+}
+
+.yourtel{
+    display: flex;
+}
+button {
+    width: 50px;
+    height: 20px;
+    margin-top: 23px;
+    margin-left: 10px;
+    background-color: #d60ee0;
+}
+h2{
+    margin-top: 20px;
+}
